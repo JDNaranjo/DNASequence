@@ -1,0 +1,4 @@
+package com.meli.challenge.dna.infrastructure.adapters.output.persistance.repository;
+
+public interface DNARepository {
+}

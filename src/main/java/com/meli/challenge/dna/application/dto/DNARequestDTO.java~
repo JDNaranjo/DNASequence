@@ -1,0 +1,10 @@
+package com.meli.challenge.dna.application.dto;
+
+import lombok.Data;
+import lombok.Getter;
+
+public class DNARequestDTO {
+
+    @Getter
+    private String[] dna;
+}

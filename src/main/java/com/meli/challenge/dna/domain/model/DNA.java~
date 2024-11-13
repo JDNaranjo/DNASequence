@@ -1,0 +1,23 @@
+package com.meli.challenge.dna.domain.model;
+
+import jakarta.persistence.*;
+import lombok.Builder;
+import lombok.Data;
+
+@Entity
+@Table(name = "dna")
+@Data
+@Builder
+public class DNA {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    @Column
+    private String dna;
+
+    @ManyToOne
+    @JoinColumn(name = "sequence_id")
+    private Sequence sequence;
+}
